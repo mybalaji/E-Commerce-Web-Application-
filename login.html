@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="button.png" alt="Image" style="width: 200px; height: auto;">   
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <label for="loginName">Name:</label>
+        <input type="text" id="loginName" required><br>
+
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" required><br>
+
+        <input type="submit" value="Login">
+    </form>
+    <script>
+        function validateLogin() {
+            var name = document.getElementById("loginName").value;
+            var password = document.getElementById("loginPassword").value;
+            if (name === "" || password === "") {
+                alert("Please fill in both name and password.");
+                return false; 
+            }
+            return true; 
+        }
+    </script>
+</body>
+</html>

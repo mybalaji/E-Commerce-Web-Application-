@@ -1,0 +1,61 @@
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('backedited.jpeg.jpg');   
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+h1 {
+    font-size: 28px;
+    text-align: center;
+    text-color: rgba(13, 62, 119, 0.612);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+.button {
+    display: inline-block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #96b2b4;
+}
+.home-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+}
+header {
+    color: #fff;
+    padding: 20px;
+}
+main {
+    flex: 1; 
+}
+footer { 
+    padding: 20px;
+    position: absolute;
+    bottom: 0; 
+    width: 100% 
+}
